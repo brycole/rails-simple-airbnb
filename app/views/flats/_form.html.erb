@@ -1,0 +1,12 @@
+
+
+<%= simple_form_for [@flat] do |f| %>
+  <%= f.input :name, label: "Name" %>
+  <%= f.input :address, label: "Address" %>
+  <%= f.input :description, label: "Description" %>
+  <%= f.input :price_per_night, label: "Price per night" %>
+  <%= f.input :number_of_guests, label: "Number of guests" %>
+  <%= f.input :url, label: "Url of picture" %>
+  <%= f.submit "Add a new flat", class: "btn btn-primary" %>
+  <%= link_to "Return to listings", flats_path, class:"btn btn-danger" %>
+<% end %>
